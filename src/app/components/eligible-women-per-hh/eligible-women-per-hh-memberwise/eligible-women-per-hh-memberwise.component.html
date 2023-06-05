@@ -1,3 +1,7 @@
+
+
+
+
 <div class="card">
     <p-table
         #dt
@@ -20,7 +24,7 @@
     >
         <ng-template pTemplate="caption">
             <div class="table-header" style="font-size: x-large">
-                FC-2W:ELIGIBLE WOMEN PER HOUSEHOLD FOR {{ this.stateName }}
+                FC-2W: ELIGIBLE WOMEN PER HOUSEHOLD FOR {{ this.stateName |uppercase }} AND {{this.teamName | uppercase}}
             </div>
             <br />
             <div class="flex">

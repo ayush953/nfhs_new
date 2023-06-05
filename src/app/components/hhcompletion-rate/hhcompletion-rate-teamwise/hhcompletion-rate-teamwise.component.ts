@@ -90,7 +90,8 @@ export class HhcompletionRateTeamwiseComponent {
             this.householdService.getAllHhCompletionRateTeamwise(this.stateId)
         );
         //this.householdService.getAllEligibleMenPerHh().then()
-        //console.log(this.datalist);
+        console.log("hh completion rate teamwise data");
+        console.log(this.datalist);
     }
 
     exportPdf() {

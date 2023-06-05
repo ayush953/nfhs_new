@@ -78,7 +78,46 @@ import { VaccinationHealthCardsMemberwiseComponent } from './components/Vaccinat
 import { BirthDisplacementComponent } from './components/birthDisplacement/birth-displacement/birth-displacement.component';
 import { BirthDisplacementTeamwiseComponent } from './components/birthDisplacement/birth-displacement-teamwise/birth-displacement-teamwise.component';
 import { BirthDisplacementMemberwiseComponent } from './components/birthDisplacement/birth-displacement-memberwise/birth-displacement-memberwise.component';
-
+import { TooltipModule } from "primeng/tooltip";
+import { SexRatioOfChildrenComponent } from './components/sexRatioOfChildren/sex-ratio-of-children/sex-ratio-of-children.component';
+import { SexRatioOfChildrenTeamwiseComponent } from './components/sexRatioOfChildren/sex-ratio-of-children-teamwise/sex-ratio-of-children-teamwise.component';
+import { SexRatioOfChildrenMemberwiseComponent } from './components/sexRatioOfChildren/sex-ratio-of-children-memberwise/sex-ratio-of-children-memberwise.component';
+import { WomensHeightComponent } from './components/womensHeight/womens-height/womens-height.component';
+import { WomensHeightTeamwiseComponent } from './components/womensHeight/womens-height-teamwise/womens-height-teamwise.component';
+import { WomensHeightMemberwiseComponent } from './components/womensHeight/womens-height-memberwise/womens-height-memberwise.component';
+import { WomensWeightComponent } from './components/womensWeight/womens-weight/womens-weight.component';
+import { WomensWeightTeamwiseComponent } from './components/womensWeight/womens-weight-teamwise/womens-weight-teamwise.component';
+import { WomensWeightMemberwiseComponent } from './components/womensWeight/womens-weight-memberwise/womens-weight-memberwise.component';
+import { BirthWeightHealthcardComponent } from './components/birthWeightHealthcard/birth-weight-healthcard/birth-weight-healthcard.component';
+import { BirthWeightHealthcardMemberwiseComponent } from './components/birthWeightHealthcard/birth-weight-healthcard-memberwise/birth-weight-healthcard-memberwise.component';
+import { BirthWeightHealthcardTeamwiseComponent } from './components/birthWeightHealthcard/birth-weight-healthcard-teamwise/birth-weight-healthcard-teamwise.component';
+import { InterviewStartTimeComponent } from './components/interview_start_time/interview-start-time/interview-start-time.component';
+import { InterviewStartTimeMemberwiseComponent } from './components/interview_start_time/interview-start-time-memberwise/interview-start-time-memberwise.component';
+import { InterviewStartTimeTeamwiseComponent } from './components/interview_start_time/interview-start-time-teamwise/interview-start-time-teamwise.component';
+import { MensHeightComponent } from './components/mensHeight/mens-height/mens-height.component';
+import { MensHeightTeamwiseComponent } from './components/mensHeight/mens-height-teamwise/mens-height-teamwise.component';
+import { MensHeightMemberwiseComponent } from './components/mensHeight/mens-height-memberwise/mens-height-memberwise.component';
+import { ChildrensHeightMemberwiseComponent } from './components/childrens-height/childrens-height-memberwise/childrens-height-memberwise.component';
+import { ChildrensHeightTeamwiseComponent } from './components/childrens-height/childrens-height-teamwise/childrens-height-teamwise.component';
+import { ChildrensHeightComponent } from './components/childrens-height/childrens-height/childrens-height.component';
+import { ChildrensWeightComponent } from './components/childrens-weight/childrens-weight/childrens-weight.component';
+import { ChildrensWeightTeamwiseComponent } from './components/childrens-weight/childrens-weight-teamwise/childrens-weight-teamwise.component';
+import { ChildrensWeightMemberwiseComponent } from './components/childrens-weight/childrens-weight-memberwise/childrens-weight-memberwise.component';
+import { ChildrensWeightHeapingFirstDecimalComponent } from './components/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal.component';
+import { ChildrensWeightHeapingFirstDecimalTeamwiseComponent } from './components/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal-teamwise/childrens-weight-heaping-first-decimal-teamwise.component';
+import { ChildrensWeightHeapingFirstDecimalMemberwiseComponent } from './components/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal-memberwise/childrens-weight-heaping-first-decimal-memberwise.component';
+import { ChildrensWeightHeapingSecondDecimalComponent } from './components/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal.component';
+import { ChildrensWeightHeapingSecondDecimalTeamwiseComponent } from './components/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal-teamwise/childrens-weight-heaping-second-decimal-teamwise.component';
+import { ChildrensWeightHeapingSecondDecimalMemberwiseComponent } from './components/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal-memberwise/childrens-weight-heaping-second-decimal-memberwise.component';
+import { MensWeightHeapingFirstDecimalComponent } from './components/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal.component';
+import { MensWeightHeapingFirstDecimalTeamwiseComponent } from './components/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal-teamwise/mens-weight-heaping-first-decimal-teamwise.component';
+import { MensWeightHeapingFirstDecimalMemberwiseComponent } from './components/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal-memberwise/mens-weight-heaping-first-decimal-memberwise.component';
+import { MensWeightHeapingSecondDecimalComponent } from './components/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal.component';
+import { MensWeightHeapingSecondDecimalTeamwiseComponent } from './components/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal-teamwise/mens-weight-heaping-second-decimal-teamwise.component';
+import { MensWeightHeapingSecondDecimalMemberwiseComponent } from './components/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal-memberwise/mens-weight-heaping-second-decimal-memberwise.component';
+import { MensWeightComponent } from './components/mens-weight/mens-weight/mens-weight.component';
+import { MensWeightTeamwiseComponent } from './components/mens-weight/mens-weight-teamwise/mens-weight-teamwise.component';
+import { MensWeightMemberwiseComponent } from './components/mens-weight/mens-weight-memberwise/mens-weight-memberwise.component';
 
 
 @NgModule({
@@ -142,7 +181,53 @@ import { BirthDisplacementMemberwiseComponent } from './components/birthDisplace
         AgeDisplacementWomenLowerLimitMemberwiseComponent, 
         AgeDisplacementWomenUpperLimitComponent, 
         AgeDisplacementWomenUpperLimitTeamwiseComponent, 
-        AgeDisplacementWomenUpperLimitMemberwiseComponent],
+        AgeDisplacementWomenUpperLimitMemberwiseComponent,
+
+
+
+        SexRatioOfChildrenComponent, 
+        SexRatioOfChildrenTeamwiseComponent, 
+        SexRatioOfChildrenMemberwiseComponent, 
+        WomensHeightComponent, 
+        WomensHeightTeamwiseComponent, 
+        WomensHeightMemberwiseComponent, 
+        WomensWeightComponent, 
+        WomensWeightTeamwiseComponent, 
+        WomensWeightMemberwiseComponent,
+        BirthWeightHealthcardComponent,
+        BirthWeightHealthcardMemberwiseComponent,
+        BirthWeightHealthcardTeamwiseComponent,
+        InterviewStartTimeComponent,
+        InterviewStartTimeMemberwiseComponent,
+        InterviewStartTimeTeamwiseComponent, 
+        MensHeightComponent, 
+        MensHeightTeamwiseComponent, 
+        MensHeightMemberwiseComponent,
+        ChildrensHeightMemberwiseComponent, 
+        ChildrensHeightTeamwiseComponent, 
+        ChildrensHeightComponent, 
+        ChildrensWeightComponent, 
+        ChildrensWeightTeamwiseComponent, 
+        ChildrensWeightMemberwiseComponent, 
+        ChildrensWeightHeapingFirstDecimalComponent, 
+        ChildrensWeightHeapingFirstDecimalTeamwiseComponent, 
+        ChildrensWeightHeapingFirstDecimalMemberwiseComponent, 
+        ChildrensWeightHeapingSecondDecimalComponent, 
+        ChildrensWeightHeapingSecondDecimalTeamwiseComponent, 
+        ChildrensWeightHeapingSecondDecimalMemberwiseComponent,
+        MensWeightHeapingFirstDecimalComponent, 
+        MensWeightHeapingFirstDecimalTeamwiseComponent, 
+        MensWeightHeapingFirstDecimalMemberwiseComponent, 
+        MensWeightHeapingSecondDecimalComponent, 
+        MensWeightHeapingSecondDecimalTeamwiseComponent, 
+        MensWeightHeapingSecondDecimalMemberwiseComponent, 
+        MensWeightComponent, 
+        MensWeightTeamwiseComponent, 
+        MensWeightMemberwiseComponent
+    
+    
+    
+    ],
     imports: [
         AppRoutingModule,
         AppLayoutModule,
@@ -154,7 +239,8 @@ import { BirthDisplacementMemberwiseComponent } from './components/birthDisplace
         DialogModule,
         InputTextModule,
         TimelineModule,
-        TableModule
+        TableModule,
+        TooltipModule
         
     ],
     providers: [{ provide: RouteReuseStrategy, useClass: CustomRouteReuseStrategy }],

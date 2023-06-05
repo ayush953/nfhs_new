@@ -21,7 +21,7 @@
   
     <ng-template pTemplate="caption">
       <div class="table-header" style="font-size:x-large;">
-        FC-2W:ELIGIBLE WOMEN PER HOUSEHOLD FOR {{this.stateName}}
+        FC-2W:ELIGIBLE WOMEN PER HOUSEHOLD FOR {{this.stateName | uppercase}}
       </div> 
       <br/>
       <div class="flex">
@@ -168,7 +168,7 @@
     </ng-template>
     <ng-template pTemplate="emptymessage">
       <tr>
-        <td colspan="7">No Data Available</td>
+        <td colspan="7" class="text-center">No Data Available</td>
       </tr>
     </ng-template>
     

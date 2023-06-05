@@ -29,15 +29,15 @@ export class HhVisitsComponent {
             },
             {
                 field: 'visit_1',
-                header: 'visit_1',
+                header: 'Visit_1',
             },
             {
                 field: 'visit_2',
-                header: 'visit_2',
+                header: 'Visit_2',
             },
             {
                 field: 'visit_3',
-                header: 'visit_3',
+                header: 'Visit_3',
             },
             {
                 field: 'perSum',

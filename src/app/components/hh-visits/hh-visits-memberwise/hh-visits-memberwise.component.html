@@ -3,7 +3,7 @@
         #dt
         [value]="datalist"
         [exportHeader]="'customExportHeader'"
-        exportFilename="hh-visits-memberwise"
+        exportFilename="Hh-visits-memberwise"
         [columns]="cols"
         selectionMode="multiple"
         [(selection)]="selectedDatalist"
@@ -20,7 +20,7 @@
     >
         <ng-template pTemplate="caption">
             <div class="table-header" style="font-size: x-large">
-                FC-1A : HOUSEHOLD VISITS OF {{ this.stateName }} And {{this.teamName}}
+                FC-1A : HOUSEHOLD VISITS OF {{ this.stateName | uppercase }} AND {{this.teamName | uppercase }}
             </div>
             <br />
             <div class="flex">

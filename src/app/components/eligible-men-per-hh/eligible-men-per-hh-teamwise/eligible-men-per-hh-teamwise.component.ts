@@ -33,11 +33,11 @@ ngOnInit() {
 this.cols = [                
   { field: 'team', header: 'Teams', customExportHeader: 'Datalist Code' },
   { field: 'noOfCompletedHhUrban', header: 'Number of Completed Households (Urban)' },
-  { field: 'noOfDeFactoEligibleMenInCompletedHhUrban', header: 'Number of de facto eligible men in those HHs (Urban)' },
-  { field: 'meanNoOfDeFactoEligibleMenPerHhUrban', header: 'Mean number of de facto eligible men per HH (Urban)' },
+  { field: 'noOfDeFactoEligibleMenInCompletedHhUrban', header: 'Number of de Facto Eligible men in those HHs (Urban)' },
+  { field: 'meanNoOfDeFactoEligibleMenPerHhUrban', header: 'Mean number of de Facto Eligible men per HH (Urban)' },
   { field: 'noOfCompletedHhRural', header: 'Number of Completed Households (Rural)' },
-  { field: 'noOfDeFactoEligibleMenInCompletedHhRural', header: 'Number of de facto eligible men in those HHs (Rural)' },
-  { field: 'meanNoOfDeFactoEligibleMenPerHhRural', header: 'Mean number of de facto eligible men per HH (Rural)' }
+  { field: 'noOfDeFactoEligibleMenInCompletedHhRural', header: 'Number of de Facto Eligible men in those HHs (Rural)' },
+  { field: 'meanNoOfDeFactoEligibleMenPerHhRural', header: 'Mean number of de Facto Eligible men per HHs (Rural)' }
 
 ];
 this.exportColumns = this.cols.map((col) => ({ title: col.header, dataKey: col.field }));
@@ -79,7 +79,7 @@ exportPdf() {
       import('jspdf-autotable').then((x) => {
           const doc = new jsPDF.default('l', 'px', 'a3');
           (doc as any).autoTable(this.exportColumns, this.datalist);
-          doc.save('men-per-hh-teamwise.pdf');
+          doc.save('eligible-men-per-hh-teamwise.pdf');
       });
   });
 }
@@ -89,7 +89,7 @@ exportExcel() {
       const worksheet = xlsx.utils.json_to_sheet(this.datalist);
       const workbook = { Sheets: { data: worksheet }, SheetNames: ['data'] };
       const excelBuffer: any = xlsx.write(workbook, { bookType: 'xlsx', type: 'array' });
-      this.saveAsExcelFile(excelBuffer, 'datalist');
+      this.saveAsExcelFile(excelBuffer, 'eligible_men-per-hh-teamwise_');
   });
 }
 
@@ -99,6 +99,6 @@ saveAsExcelFile(buffer: any, fileName: string): void {
   const data: Blob = new Blob([buffer], {
       type: EXCEL_TYPE
   });
-  FileSaver.saveAs(data, fileName + '_men-per-hh-teamwise_' + new Date().getTime() + EXCEL_EXTENSION);
+  FileSaver.saveAs(data, fileName + new Date().getTime() + EXCEL_EXTENSION);
 }
 }

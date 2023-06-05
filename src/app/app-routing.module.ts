@@ -59,6 +59,45 @@ import { AgeDisplacementWomenUpperLimitTeamwiseComponent } from './components/ag
 import { AgeDisplacementWomenUpperLimitComponent } from './components/age-displacement-women-upper-limit/age-displacement-women-upper-limit/age-displacement-women-upper-limit.component';
 import { HhcompletionRateMemberwiseComponent } from './components/hhcompletion-rate/hhcompletion-rate-memberwise/hhcompletion-rate-memberwise.component';
 import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rate/hhcompletion-rate-teamwise/hhcompletion-rate-teamwise.component';
+import { SexRatioOfChildrenComponent } from './components/sexRatioOfChildren/sex-ratio-of-children/sex-ratio-of-children.component';
+import { SexRatioOfChildrenTeamwiseComponent } from './components/sexRatioOfChildren/sex-ratio-of-children-teamwise/sex-ratio-of-children-teamwise.component';
+import { SexRatioOfChildrenMemberwiseComponent } from './components/sexRatioOfChildren/sex-ratio-of-children-memberwise/sex-ratio-of-children-memberwise.component';
+import { WomensHeightComponent } from './components/womensHeight/womens-height/womens-height.component';
+import { WomensHeightTeamwiseComponent } from './components/womensHeight/womens-height-teamwise/womens-height-teamwise.component';
+import { WomensHeightMemberwiseComponent } from './components/womensHeight/womens-height-memberwise/womens-height-memberwise.component';
+import { WomensWeightComponent } from './components/womensWeight/womens-weight/womens-weight.component';
+import { WomensWeightTeamwiseComponent } from './components/womensWeight/womens-weight-teamwise/womens-weight-teamwise.component';
+import { WomensWeightMemberwiseComponent } from './components/womensWeight/womens-weight-memberwise/womens-weight-memberwise.component';
+import { BirthWeightHealthcardMemberwiseComponent } from './components/birthWeightHealthcard/birth-weight-healthcard-memberwise/birth-weight-healthcard-memberwise.component';
+import { BirthWeightHealthcardTeamwiseComponent } from './components/birthWeightHealthcard/birth-weight-healthcard-teamwise/birth-weight-healthcard-teamwise.component';
+import { BirthWeightHealthcardComponent } from './components/birthWeightHealthcard/birth-weight-healthcard/birth-weight-healthcard.component';
+import { InterviewStartTimeMemberwiseComponent } from './components/interview_start_time/interview-start-time-memberwise/interview-start-time-memberwise.component';
+import { InterviewStartTimeTeamwiseComponent } from './components/interview_start_time/interview-start-time-teamwise/interview-start-time-teamwise.component';
+import { InterviewStartTimeComponent } from './components/interview_start_time/interview-start-time/interview-start-time.component';
+import { MensHeightMemberwiseComponent } from './components/mensHeight/mens-height-memberwise/mens-height-memberwise.component';
+import { MensHeightTeamwiseComponent } from './components/mensHeight/mens-height-teamwise/mens-height-teamwise.component';
+import { MensHeightComponent } from './components/mensHeight/mens-height/mens-height.component';
+import { ChildrensHeightMemberwiseComponent } from './components/childrens-height/childrens-height-memberwise/childrens-height-memberwise.component';
+import { ChildrensHeightTeamwiseComponent } from './components/childrens-height/childrens-height-teamwise/childrens-height-teamwise.component';
+import { ChildrensHeightComponent } from './components/childrens-height/childrens-height/childrens-height.component';
+import { ChildrensWeightHeapingFirstDecimalMemberwiseComponent } from './components/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal-memberwise/childrens-weight-heaping-first-decimal-memberwise.component';
+import { ChildrensWeightHeapingFirstDecimalTeamwiseComponent } from './components/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal-teamwise/childrens-weight-heaping-first-decimal-teamwise.component';
+import { ChildrensWeightHeapingFirstDecimalComponent } from './components/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal/childrens-weight-heaping-first-decimal.component';
+import { ChildrensWeightHeapingSecondDecimalMemberwiseComponent } from './components/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal-memberwise/childrens-weight-heaping-second-decimal-memberwise.component';
+import { ChildrensWeightHeapingSecondDecimalTeamwiseComponent } from './components/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal-teamwise/childrens-weight-heaping-second-decimal-teamwise.component';
+import { ChildrensWeightHeapingSecondDecimalComponent } from './components/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal/childrens-weight-heaping-second-decimal.component';
+import { ChildrensWeightMemberwiseComponent } from './components/childrens-weight/childrens-weight-memberwise/childrens-weight-memberwise.component';
+import { ChildrensWeightTeamwiseComponent } from './components/childrens-weight/childrens-weight-teamwise/childrens-weight-teamwise.component';
+import { ChildrensWeightComponent } from './components/childrens-weight/childrens-weight/childrens-weight.component';
+import { MensWeightHeapingFirstDecimalMemberwiseComponent } from './components/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal-memberwise/mens-weight-heaping-first-decimal-memberwise.component';
+import { MensWeightHeapingFirstDecimalTeamwiseComponent } from './components/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal-teamwise/mens-weight-heaping-first-decimal-teamwise.component';
+import { MensWeightHeapingFirstDecimalComponent } from './components/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal/mens-weight-heaping-first-decimal.component';
+import { MensWeightHeapingSecondDecimalMemberwiseComponent } from './components/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal-memberwise/mens-weight-heaping-second-decimal-memberwise.component';
+import { MensWeightHeapingSecondDecimalTeamwiseComponent } from './components/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal-teamwise/mens-weight-heaping-second-decimal-teamwise.component';
+import { MensWeightHeapingSecondDecimalComponent } from './components/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal/mens-weight-heaping-second-decimal.component';
+import { MensWeightMemberwiseComponent } from './components/mens-weight/mens-weight-memberwise/mens-weight-memberwise.component';
+import { MensWeightTeamwiseComponent } from './components/mens-weight/mens-weight-teamwise/mens-weight-teamwise.component';
+import { MensWeightComponent } from './components/mens-weight/mens-weight/mens-weight.component';
 
 @NgModule({
     imports: [
@@ -112,11 +151,11 @@ import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rat
                             component: HhcompletionRateComponent,
                         },
                         {
-                            path: 'getAllHhCompletionRateTeamWise/:stateId/:stateName',
+                            path: 'getAllHhCompletionRateTeamwise/:stateId/:stateName',
                             component: HhcompletionRateTeamwiseComponent,
                         },
                         {
-                            path: 'getAllHhCompletionRateMemberWise/:stateId/:stateName/:teamNo/:teamName',
+                            path: 'getAllHhCompletionRateMemberwise/:stateId/:stateName/:teamNo/:teamName',
                             component: HhcompletionRateMemberwiseComponent,
                         },
                         {
@@ -124,12 +163,12 @@ import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rat
                             component: AgeDisplacementMenLowerLimitComponent,
                         },
                         {
-                            path: 'getAllAgeDisplacementMenLowerLimitTeamWise/:stateId/:stateName',
+                            path: 'getAllAgeDisplacementMenLowerLimitTeamwise/:stateId/:stateName',
                             component:
                                 AgeDisplacementMenLowerLimitTeamwiseComponent,
                         },
                         {
-                            path: 'getAllAgeDisplacementMenLowerLimitMemberWise/:stateId/:stateName/:teamNo/:teamName',
+                            path: 'getAllAgeDisplacementMenLowerLimitMemberwise/:stateId/:stateName/:teamNo/:teamName',
                             component:
                                 AgeDisplacementMenLowerLimitMemberwiseComponent,
                         },
@@ -138,12 +177,12 @@ import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rat
                             component: AgeDisplacementMenUpperLimitComponent,
                         },
                         {
-                            path: 'getAllAgeDisplacementMenUpperLimitTeamWise/:stateId/:stateName',
+                            path: 'getAllAgeDisplacementMenUpperLimitTeamwise/:stateId/:stateName',
                             component:
                                 AgeDisplacementMenUpperLimitTeamwiseComponent,
                         },
                         {
-                            path: 'getAllAgeDisplacementMenUpperLimitMemberWise/:stateId/:stateName/:teamNo/:teamName',
+                            path: 'getAllAgeDisplacementMenUpperLimitMemberwise/:stateId/:stateName/:teamNo/:teamName',
                             component:
                                 AgeDisplacementMenUpperLimitMemberwiseComponent,
                         },
@@ -152,12 +191,12 @@ import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rat
                             component: AgeDisplacementWomenLowerLimitComponent,
                         },
                         {
-                            path: 'getAllAgeDisplacementWomenLowerLimitTeamWise/:stateId/:stateName',
+                            path: 'getAllAgeDisplacementWomenLowerLimitTeamwise/:stateId/:stateName',
                             component:
                                 AgeDisplacementWomenLowerLimitTeamwiseComponent,
                         },
                         {
-                            path: 'getAllAgeDisplacementWomenLowerLimitMemberWise/:stateId/:stateName/:teamNo/:teamName',
+                            path: 'getAllAgeDisplacementWomenLowerLimitMemberwise/:stateId/:stateName/:teamNo/:teamName',
                             component:
                                 AgeDisplacementWomenLowerLimitMemberwiseComponent,
                         },
@@ -171,7 +210,7 @@ import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rat
                                 AgeDisplacementWomenUpperLimitTeamwiseComponent,
                         },
                         {
-                            path: 'getAllAgeDisplacementWomenUpperLimitMemberWise/:stateId/:stateName/:teamNo/:teamName',
+                            path: 'getAllAgeDisplacementWomenUpperLimitMemberwise/:stateId/:stateName/:teamNo/:teamName',
                             component:
                                 AgeDisplacementWomenUpperLimitMemberwiseComponent,
                         },
@@ -277,6 +316,182 @@ import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rat
                             path: 'getAllBirthDisplacementMemberwise/:stateId/:stateName/:teamNo/:teamName',
                             component: BirthDisplacementMemberwiseComponent,
                         },
+
+
+
+                     // roshan codespace
+                        {
+                            path: 'getAllSexRatioOfChildren',
+                            component: SexRatioOfChildrenComponent,
+                        },
+                        {
+                            path: 'getAllSexRatioOfChildrenTeamwise/:stateId/:stateName',
+                            component: SexRatioOfChildrenTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllSexRatioOfChildrenMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: SexRatioOfChildrenMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllWomensHeight',
+                            component: WomensHeightComponent,
+                        },
+                        {
+                            path: 'getAllWomensHeightTeamwise/:stateId/:stateName',
+                            component: WomensHeightTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllWomensHeightMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: WomensHeightMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllWomensWeight',
+                            component: WomensWeightComponent,
+                        },
+                        {
+                            path: 'getAllWomensWeightTeamwise/:stateId/:stateName',
+                            component: WomensWeightTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllWomensWeightMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: WomensWeightMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllBirthWeightHealthcard',
+                            component: BirthWeightHealthcardComponent,
+                        },
+                        {
+                            path: 'getAllBirthWeightHealthcardTeamwise/:stateId/:stateName',
+                            component: BirthWeightHealthcardTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllBirthWeightHealthcardMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: BirthWeightHealthcardMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllInterviewStartTime',
+                            component: InterviewStartTimeComponent,
+                        },
+                        {
+                            path: 'getAllInterviewStartTimeTeamwise/:stateId/:stateName',
+                            component: InterviewStartTimeTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllInterviewStartTimeMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: InterviewStartTimeMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllMensHeight',
+                            component: MensHeightComponent,
+                        },
+                        {
+                            path: 'getAllMensHeightTeamwise/:stateId/:stateName',
+                            component: MensHeightTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllMensHeightMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: MensHeightMemberwiseComponent,
+                        },
+
+
+
+                        // sampada code
+                        {
+                            path: 'getAllChildrensHeight',
+                            component: ChildrensHeightComponent,
+                        },
+                        {
+                            path: 'getAllChildrensHeightTeamwise/:stateId/:stateName',
+                            component: ChildrensHeightTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllChildrensHeightMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: ChildrensHeightMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeight',
+                            component: ChildrensWeightComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightTeamwise/:stateId/:stateName',
+                            component: ChildrensWeightTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: ChildrensWeightMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightHeapingFirstDecimal',
+                            component: ChildrensWeightHeapingFirstDecimalComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightHeapingFirstDecimalTeamwise/:stateId/:stateName',
+                            component: ChildrensWeightHeapingFirstDecimalTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightHeapingFirstDecimalMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: ChildrensWeightHeapingFirstDecimalMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightHeapingSecondDecimal',
+                            component: ChildrensWeightHeapingSecondDecimalComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightHeapingSecondDecimalTeamwise/:stateId/:stateName',
+                            component: ChildrensWeightHeapingSecondDecimalTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllChildrensWeightHeapingSecondDecimalMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: ChildrensWeightHeapingSecondDecimalMemberwiseComponent,
+                        },
+                        // {
+                        //     path: 'getAllChildMortality',
+                        //     component: ChildMortalityComponent,
+                        // },
+                        // {
+                        //     path: 'getAllChildMortalityTeamwise/:stateId/:stateName',
+                        //     component: ChildMortalityTeamwiseComponent,
+                        // },
+                        // {
+                        //     path: 'getAllChildMortalityMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                        //     component: ChildMortalityMemberwiseComponent,
+                        // },
+                        {
+                            path: 'getAllMensWeightHeapingFirstDecimal',
+                            component: MensWeightHeapingFirstDecimalComponent,
+                        },
+                        {
+                            path: 'getAllMensWeightHeapingFirstDecimalTeamwise/:stateId/:stateName',
+                            component: MensWeightHeapingFirstDecimalTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllMensWeightHeapingFirstDecimalMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: MensWeightHeapingFirstDecimalMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllMensWeightHeapingSecondDecimal',
+                            component: MensWeightHeapingSecondDecimalComponent,
+                        },
+                        {
+                            path: 'getAllMensWeightHeapingSecondDecimalTeamwise/:stateId/:stateName',
+                            component: MensWeightHeapingSecondDecimalTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllMensWeightHeapingSecondDecimalMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: MensWeightHeapingSecondDecimalMemberwiseComponent,
+                        },
+                        {
+                            path: 'getAllMensWeight',
+                            component: MensWeightComponent,
+                        },
+                        {
+                            path: 'getAllMensWeightTeamwise/:stateId/:stateName',
+                            component: MensWeightTeamwiseComponent,
+                        },
+                        {
+                            path: 'getAllMensWeightMemberwise/:stateId/:stateName/:teamNo/:teamName',
+                            component: MensWeightMemberwiseComponent,
+                        },
                     ],
                 },
             ],
@@ -289,6 +504,9 @@ import { HhcompletionRateTeamwiseComponent } from './components/hhcompletion-rat
     ],
     exports: [RouterModule],
 })
+
+
+
 export class AppRoutingModule {
     constructor(private router: Router) {
         this.router.routeReuseStrategy.shouldReuseRoute = function () {

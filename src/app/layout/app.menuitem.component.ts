@@ -87,11 +87,11 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
                 }
             });
         });
-
+                       
         this.menuResetSubscription = this.menuService.resetSource$.subscribe(() => {
             this.active = false;
         });
-
+                               
         this.router.events.pipe(filter(event => event instanceof NavigationEnd))
             .subscribe(params => {
                 if (this.item.routerLink) {
@@ -135,7 +135,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
 
         this.menuService.onMenuStateChange({ key: this.key });
 
-        // this.router.navigate([this.item.routerLink]);
+        
     }
 
     get submenuAnimation() {

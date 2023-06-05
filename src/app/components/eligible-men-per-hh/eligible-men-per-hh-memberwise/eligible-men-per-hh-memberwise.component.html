@@ -1,4 +1,4 @@
-<p>eligible-men-per-hh-memberwise works!</p>
+
 
 
 <!-- <div class="card">
@@ -66,7 +66,7 @@
     #dt
     [value]="datalist"
     [exportHeader]="'customExportHeader'"
-    exportFilename="men-per-hh-memberwise"
+    exportFilename="eligible-men-per-hh-memberwise"
     [columns]="cols"
     selectionMode="multiple"
     [(selection)]="selectedDatalist"
@@ -83,8 +83,8 @@
 >
   
     <ng-template pTemplate="caption">
-      <div class="table-header" style="font-size:x-large;">
-        FC-2M ELIGIBLE MEN PER HOUSEHOLD FOR {{this.stateName}} and {{this.teamName}}
+      <div class="table-header" style="font-size:x-large">
+        FC-2M ELIGIBLE MEN PER HOUSEHOLD FOR {{this.stateName| uppercase}} AND {{this.teamName| uppercase}}
       </div> 
       <br/>
       <div class="flex">
@@ -142,42 +142,42 @@
       <tr>
         <th pSortableColumn="noOfCompletedHhUrban" style="min-width: 14rem;text-align: center;background-color: rgb(245, 241, 241);;">
           <div class="flex justify-content-between align-items-center">
-            Number of completed households
+            Number of Completed Households
             <p-sortIcon field="noOfCompletedHhUrban"></p-sortIcon>
             
           </div>
         </th>
-        <th pSortableColumn="noOfDeFactoEligibleMenInCompletedHhUrban" style="min-width: 14rem;text-align: center;background-color: rgb(245, 241, 241);">
+        <th pSortableColumn="noOfDeFactoEligibleMenInCompletedHhUrban" style="min-width: 17rem;text-align: center;background-color: rgb(245, 241, 241);">
           <div class="flex justify-content-between align-items-center">
             Number of de Facto Eligible men in those HHs
             <p-sortIcon field="noOfDeFactoEligibleMenInCompletedHhUrban"></p-sortIcon>
             
           </div>
         </th>
-        <th pSortableColumn="meanNoOfDeFactoEligibleMenPerHhUrban" style="min-width: 10rem;text-align: center;background-color: rgb(245, 241, 241);">
+        <th pSortableColumn="meanNoOfDeFactoEligibleMenPerHhUrban" style="min-width: 17rem;text-align: center;background-color: rgb(245, 241, 241);">
           <div class="flex justify-content-between align-items-center">
-            Mean number of de facto Eligible men per HHs
+            Mean number of de Facto Eligible men per HHs
             <p-sortIcon field="meanNoOfDeFactoEligibleMenPerHhUrban"></p-sortIcon>
             
           </div>
         </th>
         <th pSortableColumn="noOfCompletedHhRural" style="min-width: 10rem;text-align: center;background-color: rgb(245, 241, 241);">
           <div class="flex justify-content-between align-items-center">
-            Number of completed households
+            Number of Completed Households
             <p-sortIcon field="noOfCompletedHhRural"></p-sortIcon>
             
           </div>
         </th>
         <th pSortableColumn="noOfDeFactoEligibleMenInCompletedHhRural" style="min-width: 10rem;text-align: center;background-color: rgb(245, 241, 241);">
           <div class="flex justify-content-between align-items-center">
-            Number of de facto eligible men in those HHs
+            Number of de Facto Eligible men in those HHs
             <p-sortIcon field="noOfDeFactoEligibleMenInCompletedHhRural"></p-sortIcon>
             
           </div>
         </th>
         <th pSortableColumn="meanNoOfDeFactoEligibleMenPerHhRural" style="min-width: 10rem;text-align: center;background-color: rgb(245, 241, 241);">
           <div class="flex justify-content-between align-items-center">
-            Mean number of de facto eligible men per HHs
+            Mean number of de Facto Eligible men per HHs
             <p-sortIcon field="meanNoOfDeFactoEligibleMenPerHhRural"></p-sortIcon>
             
           </div>
@@ -231,7 +231,7 @@
     </ng-template>
     <ng-template pTemplate="emptymessage">
       <tr>
-        <td colspan="7">No Data Available</td>
+        <td colspan="7" class="text-center">No Data Available</td>
       </tr>
     </ng-template>
     

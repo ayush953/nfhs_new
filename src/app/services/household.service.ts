@@ -18,7 +18,7 @@ export class HouseholdService {
         return this.http.get<any>(this.baseUrl + '/getAllMenVisit1554Visits');
     }
 
-    ////////////////////////////
+    
     getAllEligibleMenResponseRate(): Observable<any[]> {
         return this.http.get<any>(
             this.baseUrl + '/getAllEligibleMenResponseRate'
@@ -429,5 +429,386 @@ export class HouseholdService {
     changedValue() {
         console.log("data recieved by sidebar");
         return this.indicators;
+    }
+
+
+    // roshan workspace
+
+    getAllSexRatioOfChildren(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllSexRatioOfChildren'
+        );
+    }
+    
+    getAllSexRatioOfChildrenTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllSexRatioOfChildrenTeamwise/' + stateId
+        );
+    }
+    
+    getAllSexRatioOfChildrenMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllSexRatioOfChildrenMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+    
+    getAllWomensHeight(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllWomensHeight'
+        );
+    }
+    
+    getAllWomensHeightTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllWomensHeightTeamwise/' + stateId
+        );
+    }
+    
+    getAllWomensHeightMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllWomensHeightMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+    getAllWomensWeight(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllWomensWeight'
+        );
+    }
+    
+    getAllWomensWeightTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllWomensWeightTeamwise/' + stateId
+        );
+    }
+    
+    getAllWomensWeightMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllWomensWeightMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+    
+    getAllBirthWeightHealthcard(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllBirthWeightHealthCard'
+        );
+    }
+    
+    getAllBirthWeightHealthcardTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+                '/getAllBirthWeightHealthcardTeamwise/' +
+                stateId
+        );
+    }
+    
+    getAllBirthWeightHealthcardMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+                '/getAllBirthWeightHealthcardMemberwise/' +
+                stateId +
+                '/' +
+                teamNo
+        );
+    }
+    
+    getAllInterviewStartTime(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllInterviewStartTime'
+        );
+    }
+    
+    getAllInterviewStartTimeTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllInterviewStartTimeTeamwise/' + stateId
+        );
+    }
+    
+    getAllInterviewStartTimeMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllInterviewStartTimeMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+    
+    
+    
+    
+    getAllMensHeight(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensHeight'
+        );
+    }
+    
+    getAllMensHeightTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensHeightTeamwise/' + stateId
+        );
+    }
+    
+    getAllMensHeightMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllMensHeightMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    // sampada code 
+
+
+    getAllChildrensHeight(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensHeight'
+        );
+    }
+    getAllChildrensHeightTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensHeightTeamwise/' + stateId
+        );
+    }
+
+    getAllChildrensHeightMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllChildrensHeightMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    getAllChildrensWeight(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensWeight'
+        );
+    }
+    getAllChildrensWeightTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensWeightTeamwise/' + stateId
+        );
+    }
+
+    getAllChildrensWeightMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllChildrensWeightMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    getAllChildrensWeightHeapingFirstDecimal(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensWeightHeapingFirstDecimal'
+        );
+    }
+    getAllChildrensWeightHeapingFirstDecimalTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensWeightHeapingFirstDecimalTeamwise/' + stateId
+        );
+    }
+
+    getAllChildrensWeightHeapingFirstDecimalMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllChildrensWeightHeapingFirstDecimalMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    getAllChildrensWeightHeapingSecondDecimal(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensWeightHeapingSecondDecimal'
+        );
+    }
+    getAllChildrensWeightHeapingSecondDecimalTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildrensWeightHeapingSecondDecimalTeamwise/' + stateId
+        );
+    }
+
+    getAllChildrensWeightHeapingSecondDecimalMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllChildrensWeightHeapingSecondDecimalMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    getAllChildMortality(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildMortality'
+        );
+    }
+    getAllChildMortalityTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllChildMortalityTeamwise/' + stateId
+        );
+    }
+
+    getAllChildMortalityMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllChildMortalityMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    getAllMensWeightHeapingFirstDecimal(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensWeightHeapingFirstDecimal'
+        );
+    }
+    getAllMensWeightHeapingFirstDecimalTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensWeightHeapingFirstDecimalTeamwise/' + stateId
+        );
+    }
+
+    getAllMensWeightHeapingFirstDecimalMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllMensWeightHeapingFirstDecimalMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    
+    getAllMensWeightHeapingSecondDecimal(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensWeightHeapingSecondDecimal'
+        );
+    }
+    getAllMensWeightHeapingSecondDecimalTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensWeightHeapingSecondDecimalTeamwise/' + stateId
+        );
+    }
+
+    getAllMensWeightHeapingSecondDecimalMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllMensWeightHeapingSecondDecimalMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
+    }
+
+    getAllMensWeight(): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensWeight'
+        );
+    }
+    getAllMensWeightTeamwise(
+        stateId: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl + '/getAllMensWeightTeamwise/' + stateId
+        );
+    }
+
+    getAllMensWeightMemberwise(
+        stateId: string | null,
+        teamNo: string | null
+    ): Observable<any[]> {
+        return this.http.get<any>(
+            this.baseUrl +
+            '/getAllMensWeightMemberwise/' +
+            stateId +
+            '/' +
+            teamNo
+        );
     }
 }
