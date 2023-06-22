@@ -18,6 +18,7 @@ export class EligibleMenPerHhComponent implements OnInit{
   dtOptions: any = {};           
   
   // for csv download
+  roshan: any;
   cols: any[]=[];                
   selectedDatalist: any[]=[];    
   exportColumns :any[]=[];                           
